@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(210, 60%, 98%);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 43rem;
+  max-width: 100%;
+  background-color: white;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 120px;
+  border-radius: 15px;
+  padding: 0 25px;
+  box-shadow: 11px 14px 45px -21px hsl(205, 33%, 90%);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+
+.notifications {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.counter {
+  padding: 3px 10px;
+  background-color: hsl(219, 85%, 26%);
+  color: white;
+  border-radius: 5px;
+}
+
+.mark-read {
+  cursor: pointer;
+  color: hsl(219, 12%, 42%);
+}
+
+.mark-read:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+  margin: auto;
+}
+
+.notification {
+  display: flex;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.to-read {
+  background-color: hsla(210, 60%, 98%, 1);
+  cursor: pointer;
+  border-right: 3px solid salmon;
+}
+
+.notification img {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  color: hsl(219, 14%, 63%);
+}
+
+.text a {
+  color: hsl(219, 12%, 42%);
+  font-weight: 900;
+  letter-spacing: 0.8px;
+}
+
+.text a:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+.name {
+  color: hsl(224, 21%, 14%);
+  cursor: pointer;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+}
+
+.name:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+.time {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.message {
+  border: 0.5px solid hsl(205, 33%, 90%);
+  margin-top: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.message:hover {
+  background-color: hsl(211, 68%, 94%)
+}
+
+.text-img {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-img a {
+  color: hsl(219, 12%, 42%);
+  font-weight: 900;
+  letter-spacing: 0.8px;
+}
+
+.text-img a:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+@media (max-width: 700px) {
+  .container {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+}
