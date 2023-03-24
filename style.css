@@ -6,7 +6,7 @@
 
 body {
   background-color: hsl(210, 60%, 98%);
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .container {
@@ -75,7 +75,7 @@ main {
 .to-read {
   background-color: hsla(210, 60%, 98%, 1);
   cursor: pointer;
-  border-right: 3px solid salmon;
+  border-right: 5px solid crimson;
 }
 
 .notification img {
@@ -125,7 +125,7 @@ main {
 }
 
 .message:hover {
-  background-color: hsl(211, 68%, 94%)
+  background-color: hsl(211, 68%, 94%);
 }
 
 .text-img {

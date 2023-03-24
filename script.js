@@ -1,21 +1,17 @@
 let counter = document.querySelector('.counter');
-let toRead = Array.from(document.querySelectorAll('.to-read'));
+let toRead = document.querySelectorAll('.to-read');
+let markRead = document.querySelector('.mark-read');
 
-// counter.textContent = toRead.length;
-
-console.log(toRead)
-for (let i = 0; i < toRead.length; i++) {
-
-  toRead[i].addEventListener('click', function() {
-    toRead[i].classList.remove('to-read');
-    toRead.splice(i, 1);
-    counter.textContent = toRead.length;
+markRead.addEventListener('click', () => {
+  toRead.forEach(e => {
+    e.classList.remove('to-read');
   })
-}
+  counter.innerText = '0';
+})
 
-
-// toRead.forEach(item => item.addEventListener('click', function() {
-//   item.classList.remove('to-read');
-// }))
-
-
+toRead.forEach(e => e.addEventListener('click', () => {
+  e.classList.remove('to-read');
+  if(counter.innerText >= 1) {
+    counter.innerText -= 1;
+  };
+}))
